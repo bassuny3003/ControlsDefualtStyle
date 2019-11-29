@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ControlsDefualtStyle.Themes">
+
+    <Style x:Key="DefualtInkCanvasStyle" TargetType="{x:Type InkCanvas}">
+        
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Stylus.IsTapFeedbackEnabled" Value="False"/>
+        <Setter Property="Stylus.IsTouchFeedbackEnabled" Value="False"/>
+        
+        <Style.Triggers>
+            
+            <Trigger Property="Width" Value="Auto">
+                <Setter Property="MinWidth" Value="350"/>
+            </Trigger>
+            
+            <Trigger Property="Height" Value="Auto">
+                <Setter Property="MinHeight" Value="250"/>
+            </Trigger>
+            
+        </Style.Triggers>
+        
+    </Style>
+
+</ResourceDictionary>
